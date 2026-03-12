@@ -1,94 +1,93 @@
 import Link from "next/link";
-import { Separator } from "@/components/ui/separator";
 
 export function Footer() {
   return (
-    <footer className="bg-muted py-12" role="contentinfo">
-      <div className="container mx-auto px-4">
+    <footer className="border-t border-[#00ff41]/20 py-12 bg-[#050505]" role="contentinfo">
+      <div className="container mx-auto px-4 font-mono">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <Link
               href="/"
-              className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors"
+              className="text-lg font-bold text-[#00ff41] hover:text-[#00ff41]/80 transition-colors terminal-glow"
             >
-              Hack<span className="text-blue-600">CSI</span>
+              <span className="text-[#00ff41]/60">~/</span>dolphin-hacks
             </Link>
-            <p className="mt-4 text-muted-foreground">
-              A 24-hour hackathon at the City University of New York, College of
+            <p className="mt-4 text-[#00ff41]/50 text-sm">
+              A 12-hour hackathon at the City University of New York, College of
               Staten Island.
             </p>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2" role="list">
+            <h3 className="text-sm text-[#00d4ff] mb-4">quick_links/</h3>
+            <ul className="space-y-2 text-sm" role="list">
               <li>
                 <Link
                   href="#about"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-[#00ff41]/50 hover:text-[#00ff41] transition-colors"
                 >
-                  About
+                  <span className="text-[#00ff41]/30">$ </span>about
                 </Link>
               </li>
               <li>
                 <Link
                   href="#schedule"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-[#00ff41]/50 hover:text-[#00ff41] transition-colors"
                 >
-                  Schedule
+                  <span className="text-[#00ff41]/30">$ </span>schedule
                 </Link>
               </li>
               <li>
                 <Link
                   href="#faq"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-[#00ff41]/50 hover:text-[#00ff41] transition-colors"
                 >
-                  FAQ
+                  <span className="text-[#00ff41]/30">$ </span>faq
                 </Link>
               </li>
               <li>
                 <Link
                   href="#sponsors"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-[#00ff41]/50 hover:text-[#00ff41] transition-colors"
                 >
-                  Sponsors
+                  <span className="text-[#00ff41]/30">$ </span>sponsors
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Contact</h3>
-            <ul className="space-y-2" role="list">
+            <h3 className="text-sm text-[#00d4ff] mb-4">contact/</h3>
+            <ul className="space-y-2 text-sm" role="list">
               <li>
                 <a
-                  href="mailto:hello@hackcsi.com"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  href="mailto:hello@dolphinhacks.com"
+                  className="text-[#00ff41]/50 hover:text-[#00ff41] transition-colors"
                 >
-                  hello@hackcsi.com
+                  hello@dolphinhacks.com
                 </a>
               </li>
-              <li className="text-muted-foreground">
+              <li className="text-[#00ff41]/40">
                 2800 Victory Blvd
               </li>
-              <li className="text-muted-foreground">
+              <li className="text-[#00ff41]/40">
                 Staten Island, NY 10314
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Follow Us</h3>
+            <h3 className="text-sm text-[#00d4ff] mb-4">social/</h3>
             <div className="flex gap-4">
               <a
-                href="https://twitter.com/hackcsi"
+                href="https://twitter.com/dolphinhacks"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-[#00ff41]/50 hover:text-[#00ff41] transition-colors"
                 aria-label="Follow us on Twitter"
               >
                 <svg
-                  className="w-6 h-6"
+                  className="w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -97,14 +96,14 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://instagram.com/hackcsi"
+                href="https://instagram.com/dolphinhacks"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-[#00ff41]/50 hover:text-[#00ff41] transition-colors"
                 aria-label="Follow us on Instagram"
               >
                 <svg
-                  className="w-6 h-6"
+                  className="w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -117,14 +116,14 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://discord.gg/hackcsi"
+                href="https://discord.gg/dolphinhacks"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-[#00ff41]/50 hover:text-[#00ff41] transition-colors"
                 aria-label="Join our Discord"
               >
                 <svg
-                  className="w-6 h-6"
+                  className="w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -133,14 +132,14 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://github.com/hackcsi"
+                href="https://github.com/dolphinhacks"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-[#00ff41]/50 hover:text-[#00ff41] transition-colors"
                 aria-label="View our GitHub"
               >
                 <svg
-                  className="w-6 h-6"
+                  className="w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -156,20 +155,20 @@ export function Footer() {
           </div>
         </div>
 
-        <Separator className="mb-8" />
-
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>&copy; 2026 HackCSI. All rights reserved.</p>
-          <div className="flex gap-6">
-            <Link href="#" className="hover:text-primary transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="hover:text-primary transition-colors">
-              Code of Conduct
-            </Link>
-            <Link href="#" className="hover:text-primary transition-colors">
-              Terms of Service
-            </Link>
+        <div className="border-t border-[#00ff41]/15 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#00ff41]/40">
+            <p><span className="text-[#00ff41]/20">// </span>&copy; 2026 Dolphin Hacks. All rights reserved.</p>
+            <div className="flex gap-6">
+              <Link href="#" className="hover:text-[#00ff41] transition-colors">
+                privacy_policy
+              </Link>
+              <Link href="#" className="hover:text-[#00ff41] transition-colors">
+                code_of_conduct
+              </Link>
+              <Link href="#" className="hover:text-[#00ff41] transition-colors">
+                terms_of_service
+              </Link>
+            </div>
           </div>
         </div>
       </div>

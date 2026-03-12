@@ -1,12 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "HackCSI 2026 - CUNY College of Staten Island Hackathon",
-  "short_name": "HackCSI",
-  "description": "A 24-hour hackathon at the City University of New York, College of Staten Island",
+  "name": "Dolphin Hacks 2026 - CUNY College of Staten Island Hackathon",
+  "short_name": "Dolphin Hacks",
+  "description": "A 12-hour hackathon at the City University of New York, College of Staten Island",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#3b5998",
+  "background_color": "#0a0a0a",
+  "theme_color": "#00ff41",
   "icons": [
     {
       "src": "/icon-192.png",

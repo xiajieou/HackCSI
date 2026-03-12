@@ -17,20 +17,20 @@ const geistMono = Geist_Mono({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#3b5998",
+  themeColor: "#0a0a0a",
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hackcsi.vercel.app"),
   title: {
-    default: "HackCSI 2026 | CUNY College of Staten Island Hackathon",
-    template: "%s | HackCSI 2026",
+    default: "Dolphin Hacks 2026 | CUNY College of Staten Island Hackathon",
+    template: "%s | Dolphin Hacks 2026",
   },
   description:
-    "Join HackCSI 2026 - A 24-hour hackathon at the City University of New York, College of Staten Island. Build, learn, and connect with fellow innovators. Open to all skill levels!",
+    "Join Dolphin Hacks 2026 - A 12-hour hackathon at the City University of New York, College of Staten Island on April 11. Build, learn, and connect with fellow innovators. Open to all skill levels!",
   keywords: [
     "hackathon",
-    "HackCSI",
+    "Dolphin Hacks",
     "CUNY",
     "College of Staten Island",
     "CSI",
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     "student hackathon",
     "NYC hackathon",
   ],
-  authors: [{ name: "HackCSI Team" }],
-  creator: "HackCSI",
+  authors: [{ name: "Dolphin Hacks Team" }],
+  creator: "Dolphin Hacks",
   publisher: "City University of New York, College of Staten Island",
   robots: {
     index: true,
@@ -59,24 +59,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://hackcsi.vercel.app",
-    siteName: "HackCSI 2026",
-    title: "HackCSI 2026 | CUNY College of Staten Island Hackathon",
+    siteName: "Dolphin Hacks 2026",
+    title: "Dolphin Hacks 2026 | CUNY College of Staten Island Hackathon",
     description:
-      "Join HackCSI 2026 - A 24-hour hackathon at the City University of New York, College of Staten Island. Build, learn, and connect with fellow innovators.",
+      "Join Dolphin Hacks 2026 - A 12-hour hackathon at the City University of New York, College of Staten Island. Build, learn, and connect with fellow innovators.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "HackCSI 2026 - College of Staten Island Hackathon",
+        alt: "Dolphin Hacks 2026 - College of Staten Island Hackathon",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HackCSI 2026 | CUNY College of Staten Island Hackathon",
+    title: "Dolphin Hacks 2026 | CUNY College of Staten Island Hackathon",
     description:
-      "Join HackCSI 2026 - A 24-hour hackathon at CUNY College of Staten Island. Build, learn, and connect!",
+      "Join Dolphin Hacks 2026 - A 12-hour hackathon at CUNY College of Staten Island. Build, learn, and connect!",
     images: ["/og-image.png"],
   },
   alternates: {

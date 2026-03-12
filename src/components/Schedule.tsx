@@ -1,135 +1,96 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-
 export function Schedule() {
-  const day1Events = [
-    { time: "8:00 AM", event: "Check-in & Registration", type: "logistics" },
-    { time: "9:00 AM", event: "Opening Ceremony", type: "ceremony" },
-    { time: "10:00 AM", event: "Hacking Begins!", type: "hacking" },
-    { time: "11:00 AM", event: "Workshop: Intro to APIs", type: "workshop" },
-    { time: "12:00 PM", event: "Lunch", type: "food" },
-    { time: "2:00 PM", event: "Workshop: UI/UX Design", type: "workshop" },
-    { time: "4:00 PM", event: "Sponsor Tech Talks", type: "sponsor" },
-    { time: "6:00 PM", event: "Dinner", type: "food" },
-    { time: "8:00 PM", event: "Workshop: Machine Learning Basics", type: "workshop" },
-    { time: "10:00 PM", event: "Midnight Snacks & Games", type: "fun" },
+  const events = [
+    { time: "08:00", event: "Check-in & Registration", type: "logistics" },
+    { time: "08:30", event: "Opening Ceremony", type: "ceremony" },
+    { time: "09:00", event: "Hacking Begins!", type: "hacking" },
+    { time: "10:30", event: "Sponsor Tech Talks", type: "sponsor" },
+    { time: "12:00", event: "Lunch Break", type: "food" },
+    { time: "13:00", event: "Hacking Continues", type: "hacking" },
+    { time: "15:00", event: "Snack Break", type: "food" },
+    { time: "17:00", event: "Hacking Ends - Submissions Due", type: "hacking" },
+    { time: "17:30", event: "Project Expo & Judging", type: "ceremony" },
+    { time: "19:00", event: "Closing Ceremony & Awards", type: "ceremony" },
+    { time: "19:30", event: "Networking Session", type: "sponsor" },
+    { time: "20:00", event: "Event Concludes", type: "logistics" },
   ];
 
-  const day2Events = [
-    { time: "12:00 AM", event: "Late Night Coding", type: "hacking" },
-    { time: "7:00 AM", event: "Breakfast", type: "food" },
-    { time: "9:00 AM", event: "Hacking Ends - Submissions Due", type: "hacking" },
-    { time: "10:00 AM", event: "Project Expo & Judging", type: "ceremony" },
-    { time: "12:00 PM", event: "Lunch", type: "food" },
-    { time: "1:00 PM", event: "Closing Ceremony & Awards", type: "ceremony" },
-    { time: "2:00 PM", event: "Networking Session", type: "sponsor" },
-    { time: "3:00 PM", event: "Event Concludes", type: "logistics" },
-  ];
+  const getTypeLabel = (type: string) => {
+    const labels: Record<string, string> = {
+      logistics: "SYS",
+      ceremony: "EVT",
+      hacking: "RUN",
+      food: "BRK",
+      sponsor: "SPO",
+    };
+    return labels[type] || "---";
+  };
 
   const getTypeColor = (type: string) => {
     const colors: Record<string, string> = {
-      logistics: "bg-gray-500",
-      ceremony: "bg-blue-600",
-      hacking: "bg-green-600",
-      workshop: "bg-purple-600",
-      food: "bg-orange-500",
-      sponsor: "bg-blue-700",
-      fun: "bg-pink-500",
+      logistics: "text-[#00ff41]/50",
+      ceremony: "text-[#00d4ff]",
+      hacking: "text-[#00ff41]",
+      food: "text-[#ffb000]",
+      sponsor: "text-[#00d4ff]/70",
     };
-    return colors[type] || "bg-gray-500";
+    return colors[type] || "text-[#00ff41]/50";
   };
 
   return (
     <section
       id="schedule"
-      className="py-24"
+      className="py-24 border-t border-[#00ff41]/10"
       aria-labelledby="schedule-heading"
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2
             id="schedule-heading"
-            className="text-4xl md:text-5xl font-bold mb-4"
+            className="text-3xl md:text-4xl font-bold mb-4 font-mono text-[#00ff41]"
           >
-            Event <span className="text-blue-600">Schedule</span>
+            <span className="text-[#00ff41]/40">## </span>event <span className="text-[#00d4ff]">schedule</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            24 hours of hacking, learning, and fun. Here&apos;s what to expect!
+          <p className="text-lg text-[#00ff41]/60 max-w-2xl mx-auto font-mono">
+            12 hours of hacking, learning, and fun. Here&apos;s what to expect!
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <span className="text-blue-600">Day 1</span>
-                <Badge variant="secondary">Saturday, March 15</Badge>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-4" role="list">
-                {day1Events.map((item, index) => (
-                  <li key={index} className="flex items-start gap-4">
-                    <span className="text-sm font-mono text-muted-foreground min-w-[80px]">
+        <div className="max-w-2xl mx-auto">
+          <div className="border border-[#00ff41]/20 bg-[#0d0d0d]">
+            <div className="border-b border-[#00ff41]/20 px-4 py-3 flex items-center gap-2">
+              <span className="w-3 h-3 rounded-full bg-[#ff3333]/80" aria-hidden="true" />
+              <span className="w-3 h-3 rounded-full bg-[#ffb000]/80" aria-hidden="true" />
+              <span className="w-3 h-3 rounded-full bg-[#00ff41]/80" aria-hidden="true" />
+              <span className="font-mono text-sm text-[#00ff41]/60 ml-2">april11_saturday.log</span>
+            </div>
+            <div className="p-4">
+              <ul className="space-y-2 font-mono text-sm" role="list">
+                {events.map((item, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <span className="text-[#00ff41]/40 min-w-[45px]">
                       {item.time}
                     </span>
-                    <div className="flex items-center gap-2">
-                      <span
-                        className={`w-3 h-3 rounded-full ${getTypeColor(item.type)}`}
-                        aria-hidden="true"
-                      />
-                      <span>{item.event}</span>
-                    </div>
+                    <span className={`min-w-[35px] ${getTypeColor(item.type)}`}>
+                      [{getTypeLabel(item.type)}]
+                    </span>
+                    <span className="text-[#00ff41]/80">{item.event}</span>
                   </li>
                 ))}
               </ul>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <span className="text-blue-600">Day 2</span>
-                <Badge variant="secondary">Sunday, March 16</Badge>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-4" role="list">
-                {day2Events.map((item, index) => (
-                  <li key={index} className="flex items-start gap-4">
-                    <span className="text-sm font-mono text-muted-foreground min-w-[80px]">
-                      {item.time}
-                    </span>
-                    <div className="flex items-center gap-2">
-                      <span
-                        className={`w-3 h-3 rounded-full ${getTypeColor(item.type)}`}
-                        aria-hidden="true"
-                      />
-                      <span>{item.event}</span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         </div>
 
         {/* Legend */}
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
+        <div className="mt-8 flex flex-wrap justify-center gap-4 font-mono text-xs">
           {[
-            { type: "ceremony", label: "Ceremony" },
-            { type: "hacking", label: "Hacking" },
-            { type: "workshop", label: "Workshop" },
-            { type: "food", label: "Food" },
-            { type: "sponsor", label: "Sponsor" },
-            { type: "fun", label: "Fun" },
+            { type: "ceremony", label: "EVT: Ceremony" },
+            { type: "hacking", label: "RUN: Hacking" },
+            { type: "food", label: "BRK: Food" },
+            { type: "sponsor", label: "SPO: Sponsor" },
           ].map((item) => (
             <div key={item.type} className="flex items-center gap-2">
-              <span
-                className={`w-3 h-3 rounded-full ${getTypeColor(item.type)}`}
-                aria-hidden="true"
-              />
-              <span className="text-sm text-muted-foreground">{item.label}</span>
+              <span className={`${getTypeColor(item.type)}`}>{item.label}</span>
             </div>
           ))}
         </div>
