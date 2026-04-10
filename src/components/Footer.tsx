@@ -80,7 +80,6 @@ export function Footer() {
             <h3 className="text-sm text-[#00d4ff] mb-4">social/</h3>
             <div className="flex gap-4">
               <a
-                href="https://twitter.com/dolphinhacks"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#00ff41]/50 hover:text-[#00ff41] transition-colors"
@@ -96,7 +95,6 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://instagram.com/dolphinhacks"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#00ff41]/50 hover:text-[#00ff41] transition-colors"
@@ -116,7 +114,6 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://discord.gg/dolphinhacks"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#00ff41]/50 hover:text-[#00ff41] transition-colors"
@@ -132,7 +129,6 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://github.com/dolphinhacks"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#00ff41]/50 hover:text-[#00ff41] transition-colors"

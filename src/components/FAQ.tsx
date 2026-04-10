@@ -50,7 +50,7 @@ export function FAQ() {
     {
       question: "Where is the event held?",
       answer:
-        "Dolphin Hacks takes place at the College of Staten Island campus in the Center for the Arts building. The address is 2800 Victory Blvd, Staten Island, NY 10314. Free parking is available on campus.",
+        "Dolphin Hacks takes place at the College of Staten Island campus in the Computer Science Building. The address is 2800 Victory Blvd, Staten Island, NY 10314.",
     },
   ];
 
