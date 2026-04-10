@@ -1,22 +1,13 @@
 export function Sponsors() {
   const tierSponsors = {
     platinum: [
-      { name: "TechCorp", placeholder: "Platinum Sponsor" },
+      { name: "Google", placeholder: "Platinum Sponsor" },
     ],
-    gold: [
-      { name: "InnovateTech", placeholder: "Gold Sponsor" },
-      { name: "CodeWorks", placeholder: "Gold Sponsor" },
-    ],
-    silver: [
-      { name: "DataFlow", placeholder: "Silver Sponsor" },
-      { name: "CloudNine", placeholder: "Silver Sponsor" },
-      { name: "DevStudio", placeholder: "Silver Sponsor" },
-    ],
+    gold: [],
+    silver: [],
     partners: [
-      { name: "CSI Computer Science", placeholder: "Partner" },
-      { name: "CUNY TechWorks", placeholder: "Partner" },
-      { name: "NYC Tech Hub", placeholder: "Partner" },
-      { name: "MLH", placeholder: "Partner" },
+      { name: "Major League Hacking", placeholder: "Partner" },
+      { name: "CSI Computer Science Department", placeholder: "Partner" },
     ],
   };
 
@@ -41,7 +32,7 @@ export function Sponsors() {
         </div>
 
         {/* Platinum Tier */}
-        <div className="mb-12">
+        {tierSponsors.platinum.length > 0 && <div className="mb-12">
           <h3 className="text-center text-sm font-mono text-[#ffb000] mb-6">
             ╔══ PLATINUM ══╗
           </h3>
@@ -51,16 +42,16 @@ export function Sponsors() {
                 key={sponsor.name}
                 className="w-64 h-32 flex items-center justify-center border-2 border-[#ffb000]/40 bg-[#0d0d0d] hover:border-[#ffb000] transition-colors"
               >
-                <p className="font-mono text-[#ffb000]/70">
-                  {sponsor.placeholder}
+                <p className="font-mono text-[#ffb000]/70 text-center px-2">
+                  {sponsor.name}
                 </p>
               </div>
             ))}
           </div>
-        </div>
+        </div>}
 
         {/* Gold Tier */}
-        <div className="mb-12">
+        {tierSponsors.gold.length > 0 && <div className="mb-12">
           <h3 className="text-center text-sm font-mono text-[#00d4ff] mb-6">
             ╔══ GOLD ══╗
           </h3>
@@ -70,16 +61,16 @@ export function Sponsors() {
                 key={sponsor.name}
                 className="w-48 h-24 flex items-center justify-center border border-[#00d4ff]/30 bg-[#0d0d0d] hover:border-[#00d4ff] transition-colors"
               >
-                <p className="font-mono text-sm text-[#00d4ff]/60">
-                  {sponsor.placeholder}
+                <p className="font-mono text-sm text-[#00d4ff]/60 text-center px-2">
+                  {sponsor.name}
                 </p>
               </div>
             ))}
           </div>
-        </div>
+        </div>}
 
         {/* Silver Tier */}
-        <div className="mb-12">
+        {tierSponsors.silver.length > 0 && <div className="mb-12">
           <h3 className="text-center text-sm font-mono text-[#00ff41]/70 mb-6">
             ╔══ SILVER ══╗
           </h3>
@@ -89,16 +80,16 @@ export function Sponsors() {
                 key={sponsor.name}
                 className="w-40 h-20 flex items-center justify-center border border-[#00ff41]/20 bg-[#0d0d0d] hover:border-[#00ff41]/50 transition-colors"
               >
-                <p className="text-xs font-mono text-[#00ff41]/50">
-                  {sponsor.placeholder}
+                <p className="text-xs font-mono text-[#00ff41]/50 text-center px-2">
+                  {sponsor.name}
                 </p>
               </div>
             ))}
           </div>
-        </div>
+        </div>}
 
         {/* Partners */}
-        <div>
+        {tierSponsors.partners.length > 0 && <div>
           <h3 className="text-center text-sm font-mono text-[#00ff41]/50 mb-6">
             ╔══ PARTNERS ══╗
           </h3>
@@ -106,15 +97,15 @@ export function Sponsors() {
             {tierSponsors.partners.map((sponsor) => (
               <div
                 key={sponsor.name}
-                className="w-36 h-16 flex items-center justify-center border border-[#00ff41]/15 bg-[#0d0d0d] hover:border-[#00ff41]/40 transition-colors"
+                className="w-52 h-16 flex items-center justify-center border border-[#00ff41]/15 bg-[#0d0d0d] hover:border-[#00ff41]/40 transition-colors"
               >
-                <p className="text-xs font-mono text-[#00ff41]/40">
-                  {sponsor.placeholder}
+                <p className="text-xs font-mono text-[#00ff41]/40 text-center px-2">
+                  {sponsor.name}
                 </p>
               </div>
             ))}
           </div>
-        </div>
+        </div>}
 
         {/* Become a Sponsor CTA */}
         <div className="mt-16 text-center">
