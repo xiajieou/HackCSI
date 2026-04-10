@@ -1,5 +1,17 @@
 export function Sponsors() {
-  const tierSponsors = {
+  type Sponsor = {
+    name: string;
+    placeholder: string;
+  };
+
+  type SponsorTiers = {
+    platinum: Sponsor[];
+    gold: Sponsor[];
+    silver: Sponsor[];
+    partners: Sponsor[];
+  };
+
+  const tierSponsors: SponsorTiers = {
     platinum: [
       { name: "Google", placeholder: "Platinum Sponsor" },
     ],
