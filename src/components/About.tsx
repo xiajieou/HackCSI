@@ -19,10 +19,10 @@ export function About() {
         "Develop tools that enhance learning experiences and make education more accessible.",
     },
     {
-      icon: "🤝",
-      title: "Community",
+      icon: "💼",
+      title: "Business",
       description:
-        "Design solutions that strengthen community bonds and address local challenges.",
+        "Design solutions that strengthen business operations and address market challenges.",
     },
   ];
 

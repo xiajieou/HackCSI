@@ -35,7 +35,7 @@ export function FAQ() {
     {
       question: "What can I build?",
       answer:
-        "You can build anything! Web apps, mobile apps, hardware projects, games, AI/ML applications—the sky's the limit. We have challenge tracks in Healthcare, Sustainability, Education, and Community, but you're free to work on any project.",
+        "You can build anything! Web apps, mobile apps, hardware projects, games, AI/ML applications—the sky's the limit. We have challenge tracks in Healthcare, Sustainability, Education, and Business, but you're free to work on any project.",
     },
     {
       question: "Will there be food?",
