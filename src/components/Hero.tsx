@@ -58,7 +58,7 @@ export function Hero() {
             <p className="text-[#00ff41]/50 text-sm">hours</p>
           </div>
           <div className="text-center border border-[#00ff41]/20 p-4 bg-[#00ff41]/5">
-            <p className="text-4xl md:text-5xl font-bold text-[#00ff41] terminal-glow">200+</p>
+            <p className="text-4xl md:text-5xl font-bold text-[#00ff41] terminal-glow">N/A</p>
             <p className="text-[#00ff41]/50 text-sm">hackers</p>
           </div>
           <div className="text-center border border-[#00ff41]/20 p-4 bg-[#00ff41]/5">
