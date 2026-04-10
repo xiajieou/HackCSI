@@ -1,17 +1,13 @@
 export function Schedule() {
   const events = [
-    { time: "08:00", event: "Check-in & Registration", type: "logistics" },
-    { time: "08:30", event: "Opening Ceremony", type: "ceremony" },
-    { time: "09:00", event: "Hacking Begins!", type: "hacking" },
-    { time: "10:30", event: "Sponsor Tech Talks", type: "sponsor" },
-    { time: "12:00", event: "Lunch Break", type: "food" },
-    { time: "13:00", event: "Hacking Continues", type: "hacking" },
-    { time: "15:00", event: "Snack Break", type: "food" },
-    { time: "17:00", event: "Hacking Ends - Submissions Due", type: "hacking" },
-    { time: "17:30", event: "Project Expo & Judging", type: "ceremony" },
-    { time: "19:00", event: "Closing Ceremony & Awards", type: "ceremony" },
-    { time: "19:30", event: "Networking Session", type: "sponsor" },
-    { time: "20:00", event: "Event Concludes", type: "logistics" },
+    { time: "8:00 AM", event: "Registration & Breakfast", type: "food" },
+    { time: "8:30 AM", event: "Opening + Team Formation Ceremony", type: "ceremony" },
+    { time: "9:00 AM", event: "Hacking Begins + Vibe coding workshop", type: "hacking" },
+    { time: "1:00 PM", event: "Lunch Break", type: "food" },
+    { time: "4:30 PM", event: "Dinner Break", type: "food" },
+    { time: "7:00 PM", event: "Presentations & Judging", type: "ceremony" },
+    { time: "7:30 PM", event: "Awards Ceremony", type: "ceremony" },
+    { time: "8:00 PM", event: "Event Concludes", type: "logistics" },
   ];
 
   const getTypeLabel = (type: string) => {
